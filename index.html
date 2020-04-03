@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="Content/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="Content/Style.css">
+</head>
+<body>
+    <h1>Рассчет площади и объема фигур</h1>
+
+    <div id=app>
+        <div class="select">
+            <label for="">Выберите фигуру:</label>
+            <select name="figure" v-model="figure">
+                <option value="cube">Куб</option>
+                <option value="pyramid">Усеченная четырехгранная пирамида</option>
+            </select>
+        </div>
+
+        <form action="php/cube.php" method="post" v-if="figure=='cube'">
+            <fieldset>
+                <legend>Введите размеры куба:</legend>
+                
+                <div class="row field">
+                    <label for="a" class="col-md-6">Сторона: </label>
+                    <input type="number" name="a" id="a" class="col-md-5">
+                </div>
+                
+                <button> <span>Посчитать</span> </button>
+            </fieldset>
+        </form>
+
+        <form action="php/pyramid.php" method="post" v-else-if="figure=='pyramid'">
+            <fieldset>
+                <legend>Введите размеры пирамиды:</legend>
+
+                <div class="row field">
+                    <label for="a1" class="col-md-6">Сторона нижнего основания: </label>
+                    <input type="number" name="a1" id="a1" class="col-md-5">
+                </div>
+                <div class="row field">
+                    <label for="S2" class="col-md-6">Сторона верхнего основания: </label>
+                    <input type="number" name="a2" id="a2" class="col-md-5">
+                </div>
+                <div class="row field">
+                    <label for="h" class="col-md-6">Высота: </label>
+                    <input type="number" name="h" id="h" class="col-md-5">
+                </div>
+                
+                <button> <span>Посчитать</span> </button>
+            </fieldset>
+        </form>
+        
+        <footer>
+
+            <div class="footer-section">
+                <a href="php\Test.php" class="link">
+                    <span> Unit-Тест </span>
+                </a>
+            </div>
+
+            <div class="footer-section">
+                <div class="loader">
+                    <span class="loader-item"></span>
+                    <span class="loader-item"></span>
+                    <span class="loader-item"></span>
+                    <span class="loader-item"></span>
+                </div>
+            </div>     
+                  
+        </footer>
+    </div>
+
+    <script src="Script/vue.js"></script>
+    <script src="Script/Main.js"></script>
+</body>
+</html>
