@@ -12,6 +12,7 @@
     <fieldset class="mt-5">
         <?php
             require_once("Classes/S/SBase.php");
+            require_once("Classes/S/SSideCube.php");
             require_once("Classes/V/VCube.php");
             $a = $_POST['a'];
 
@@ -22,9 +23,11 @@
             else {
                 
                 $SBase = new SBase();
+                $SSide = new SSideCube();
                 $VCube = new VCube();
                 echo "<h1>Результат</h1>";
-                echo "<p> Площадь: " . array_sum($SBase->Count($a, $a))*3 . "</p>";
+                echo "<p> Площадь оснований: " . array_sum($SBase->Count($a, $a)) . "</p>";
+                echo "<p> Боковая площадь: " . $SSide->Count($a) . "</p>";
                 echo "<p> Объем: " . $VCube->Count($a) . "</p>";
             }
         ?>
