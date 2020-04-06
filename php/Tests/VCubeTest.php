@@ -1,5 +1,5 @@
 <?php
-    require_once("C:/server/data/htdocs/pr/php/Classes/V/VCube.php");
+    require_once("Classes/V/VCube.php");
     
     class VCubeTest
     {

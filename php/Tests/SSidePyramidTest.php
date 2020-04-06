@@ -1,5 +1,5 @@
 <?php
-    require_once("C:/server/data/htdocs/pr/php/Classes/S/SSidePyramid.php");
+    require_once("Classes/S/SSidePyramid.php");
 
     class SSideTest
     {

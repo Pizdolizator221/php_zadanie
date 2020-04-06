@@ -1,5 +1,5 @@
 <?php
-    require_once("C:/server/data/htdocs/pr/php/Classes/S/SBase.php");    
+    require_once("Classes/S/SBase.php");    
 
     class SBaseTest
     {

@@ -1,5 +1,5 @@
 <?php
-    require_once("C:/server/data/htdocs/pr/php/Classes/S/SSideCube.php");
+    require_once("Classes/S/SSideCube.php");
 
     class SSideCubeTest
     {

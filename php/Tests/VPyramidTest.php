@@ -1,6 +1,6 @@
 <?php
-    require_once("C:/server/data/htdocs/pr/php/Classes/S/SBase.php");
-    require_once("C:/server/data/htdocs/pr/php/Classes/V/VPyramid.php");
+    require_once("Classes/S/SBase.php");
+    require_once("Classes/V/VPyramid.php");
 
     class VPyramidTest
     {

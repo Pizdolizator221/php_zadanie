@@ -13,34 +13,34 @@
     <?php
         $isPassed = 0;
         // Проверка класса площади оснований
-        require_once("C:\server\data\htdocs\pr\php\Tests\SBaseTest.php");
+        require_once("Tests\SBaseTest.php");
         $SBaseTest = new SBaseTest();
         $TestMessage = $SBaseTest->Test()[0];
         $isPassed += $SBaseTest->Test()[1];
         echo $TestMessage;
 
-        require_once("C:\server\data\htdocs\pr\php\Tests\SSideCubeTest.php");
+        require_once("Tests\SSideCubeTest.php");
         $SSideCubeTest = new SSideCubeTest();
         $TestMessage = $SBaseTest->Test()[0];
         $isPassed += $SBaseTest->Test()[1];
         echo $TestMessage;
         
         // Проверка класса боковой площади 
-        require_once("C:\server\data\htdocs\pr\php\Tests\SSidePyramidTest.php");
+        require_once("Tests\SSidePyramidTest.php");
         $SSideTest = new SSideTest();
         $TestMessage = $SSideTest->Test()[0];
         $isPassed += $SSideTest->Test()[1];
         echo $TestMessage;
 
         // Проверка класса объема куба
-        require_once("C:\server\data\htdocs\pr\php\Tests\VCubeTest.php");
+        require_once("Tests\VCubeTest.php");
         $VCubeTest = new VCubeTest();
         $TestMessage = $VCubeTest->Test()[0];
         $isPassed += $VCubeTest->Test()[1];
         echo $TestMessage;
 
         //Проверка класса объема пирамиды
-        require_once("C:\server\data\htdocs\pr\php\Tests\VPyramidTest.php");  
+        require_once("Tests\VPyramidTest.php");  
         $VPyramidTest = new VPyramidTest();
         $TestMessage = $VPyramidTest->Test()[0];
         $isPassed += $VPyramidTest->Test()[1];
