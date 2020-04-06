@@ -1,5 +1,5 @@
 <?php
-    class SSIde
+    class SSide
     {
         public function Count($a1, $a2, $h)
         {

@@ -12,7 +12,7 @@
     <fieldset class="mt-5">
         <?php
             require_once("Classes/S/SBase.php");
-            require_once("Classes/S/SSide.php");
+            require_once("Classes/S/SSidePyramid.php");
             require_once("Classes/V/VPyramid.php");
 
             $a1 = $_POST['a1'];

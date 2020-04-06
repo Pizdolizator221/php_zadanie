@@ -18,9 +18,15 @@
         $TestMessage = $SBaseTest->Test()[0];
         $isPassed += $SBaseTest->Test()[1];
         echo $TestMessage;
+
+        require_once("C:\server\data\htdocs\pr\php\Tests\SSideCubeTest.php");
+        $SSideCubeTest = new SSideCubeTest();
+        $TestMessage = $SBaseTest->Test()[0];
+        $isPassed += $SBaseTest->Test()[1];
+        echo $TestMessage;
         
         // Проверка класса боковой площади 
-        require_once("C:\server\data\htdocs\pr\php\Tests\SSideTest.php");
+        require_once("C:\server\data\htdocs\pr\php\Tests\SSidePyramidTest.php");
         $SSideTest = new SSideTest();
         $TestMessage = $SSideTest->Test()[0];
         $isPassed += $SSideTest->Test()[1];
