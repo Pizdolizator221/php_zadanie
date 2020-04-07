@@ -34,7 +34,7 @@
     </fieldset>
 
     <footer>
-        <a class="link" href="http://localhost/pr/"><span>Вернуться</span></a>
+        <a class="link" href="/pr/index.html"><span>Вернуться</span></a>
 
         <div class="loader">
             <span class="loader-item"></span>
