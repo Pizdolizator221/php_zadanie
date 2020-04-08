@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="/php_zadanie-master/Content/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="/php_zadanie-master/Content/Style.css">
+    <link rel="stylesheet" href="../Content/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../Content/Style.css">
 </head>
 <body>
     <fieldset class="mt-5">
@@ -39,7 +39,7 @@
     </fieldset>
 
     <footer>
-        <a class="link" href="/php_zadanie-master/index.html"><span>Вернуться</span></a>
+        <a class="link" href="../index.html"><span>Вернуться</span></a>
 
         <div class="loader">
             <span class="loader-item"></span>
